@@ -1,5 +1,5 @@
 import {Sequelize} from 'sequelize';
-import db from '../config/elephantSql.js';
+import db from '../config/elephantSQL.js';
 
 const {DataTypes} = Sequelize;
 

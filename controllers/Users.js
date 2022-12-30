@@ -5,6 +5,7 @@ import jwt_decode from 'jwt-decode'
 import db from '../config/elephantSQL.js';
 
 
+
 export const getUsers = async (req, res)=>{
     try{
         const users = await Users.findAll({
