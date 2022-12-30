@@ -39,10 +39,10 @@ catch(error){
 }
 
 //add below in order to deploy app in 1 folder
-// const __dirname = path.resolve();
+const __dirname = path.resolve();
 
-// app.use(express.static(path.join(__dirname, './client/build')))
+app.use(express.static(path.join(__dirname, './client/build')))
 
-// app.get('*', (req,res)=>{
-//   res.sendFile(path.resolve(__dirname, './client/build', 'index.html'))
-// })
+app.get('*', (req,res)=>{
+  res.sendFile(path.resolve(__dirname, './client/build', 'index.html'))
+})
