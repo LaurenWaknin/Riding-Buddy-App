@@ -13,7 +13,7 @@ export const Auth = (props) => {
     const verify = async() => {
       try{
         //********** removed http://localhost:3001 **********
-        const response = await axios.get('http://localhost:3001/token',{
+        const response = await axios.get('/token',{
           headers:{
             'x-access-token':token
           }

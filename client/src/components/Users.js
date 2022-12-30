@@ -7,7 +7,7 @@ const Users = (props) => {
 
     useEffect (()=>{
         //********** removed http://localhost:3001 **********
-        fetch('http://localhost:3001/users')
+        fetch('/users')
         .then(res => {
             if(res.status === 200){
                 return res.json()

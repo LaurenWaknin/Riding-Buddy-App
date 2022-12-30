@@ -24,7 +24,7 @@ const RegistrationForm = (props) => {
 
         try{
             //********** removed http://localhost:3001 **********
-            const response = await axios.post('http://localhost:3001/register',{
+            const response = await axios.post('/register',{
                 firstname, lastname, gender, cityOfResidence, motorcycle, phonenumber, email, password
             },{
                 headers:{

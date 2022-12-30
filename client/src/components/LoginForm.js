@@ -20,7 +20,7 @@ const LoginForm = (props) => {
         console.log('handleClick');
         try{
             //********** removed http://localhost:3001 **********
-            const response = await axios.post('http://localhost:3001/login',{
+            const response = await axios.post('/login',{
                 email, password
             },{
                 headers:{
