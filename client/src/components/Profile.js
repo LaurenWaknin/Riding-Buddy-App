@@ -29,7 +29,7 @@ const Profile = (props) => {
         <h1 style={{color:'white'}}>Profile page is under construction</h1>
         <h3 style={{color:'white'}}>Meanwhile feel free to find friends on Map (👆)</h3>
         <h3 style={{color:'white'}}>* Dont forget to click on the marker icon to get the rider's info *</h3>
-        <h3 style={{color:'white'}}>And connect via a live chat in Messanger (👆)</h3>
+        <h3 style={{color:'white'}}>And connect via a live chat in Messenger (👆)</h3>
         </>
     )
 }

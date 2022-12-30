@@ -25,7 +25,7 @@ const NavLoggedIn = () => {
 
     return(
         <Stack spacing={2} direction='row'>
-            <Link to='/'>
+            <Link to='/profile'>
             <img className='img' src={logo} alt='Logo'/>
             </Link>
             <Button id='btn' component={Link} to='/messages'>Messenger</Button>

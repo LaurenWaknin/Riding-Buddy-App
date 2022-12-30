@@ -6,7 +6,7 @@ const {DataTypes} = Sequelize;
 //Model Instances
 const Users = db.define('users', {
         firstName: {
-            field: 'firstname',
+        field: 'firstname',
         type:DataTypes.STRING,
         allowNull: false,
     },

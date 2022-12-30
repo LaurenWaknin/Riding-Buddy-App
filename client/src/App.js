@@ -25,7 +25,7 @@ function App() {
           <Route path='/login' element={<LoginForm/>}/>
           <Route path='/register' element={<RegistrationForm/>}/>
           <Route path='/profile' element={<Auth><Profile /></Auth>}/>
-          <Route path='/users' element={<Users/>}/>
+          <Route path='/users' element={<Auth><Users/></Auth>}/>
           <Route path='/map' element={<Auth><Map/></Auth>}/>
           <Route path='/messages' element={<Auth><Messages/></Auth>}/>
         </Routes>

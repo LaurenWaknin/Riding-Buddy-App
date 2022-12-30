@@ -24,7 +24,7 @@ const RegistrationForm = (props) => {
 
         try{
             //********** removed http://localhost:3001 **********
-            const response = await axios.post('/register',{
+            const response = await axios.post('http://localhost:3001/register',{
                 firstname, lastname, gender, cityOfResidence, motorcycle, phonenumber, email, password
             },{
                 headers:{
@@ -51,18 +51,18 @@ const RegistrationForm = (props) => {
 
                         <FormControl component="fieldset" className='form'>
                             <FormLabel component="legend">Gender</FormLabel>
-                            <RadioGroup aria-label="gender" name="gender" style={{ display: 'initial'}} >
+                            <RadioGroup type='radio' aria-label="gender" name="gender" style={{ display: 'initial'}} required>
                                 <FormControlLabel value="female" control={<Radio />} label="Female" onChange={(e) => setGender(e.target.value)} />
                                 <FormControlLabel value="male" control={<Radio />} label="Male" onChange={(e) => setGender(e.target.value)} />
                                 <FormControlLabel value="other" control={<Radio />} label="Other" onChange={(e) => setGender(e.target.value)} />
                             </RadioGroup>
                         </FormControl>
-                        <TextField fullWidth label='First Name' placeholder="Enter your first name" onChange={(e) => setFirstname(e.target.value)} required/>
-                        <TextField fullWidth label='Last Name' placeholder="Enter your last name" onChange={(e) => setLastname(e.target.value)} required/>
-                        <TextField fullWidth label='Email' placeholder="Enter your email" onChange={(e) => setEmail(e.target.value)} required/>
-                        <TextField fullWidth label='Phone Number' placeholder="Enter your phone number" onChange={(e) => setPhonenumber(e.target.value)} required/>
-                        <TextField fullWidth label='City of Residence' placeholder="Enter your city of residence" onChange={(e) => setCityOfResidence(e.target.value)} required/>
-                        <TextField fullWidth label='Motorcycle' placeholder="Enter your motorcycle make & model" onChange={(e) => setMotorcycle(e.target.value)} required/>
+                        <TextField fullWidth label='First Name' type='text' placeholder="Enter your first name" onChange={(e) => setFirstname(e.target.value)} required/>
+                        <TextField fullWidth label='Last Name' type='text' placeholder="Enter your last name" onChange={(e) => setLastname(e.target.value)} required/>
+                        <TextField fullWidth label='Email' type='email' placeholder="Enter your email" onChange={(e) => setEmail(e.target.value)} required/>
+                        <TextField fullWidth label='Phone Number' type='tel' placeholder="Enter your phone number" onChange={(e) => setPhonenumber(e.target.value)} required/>
+                        <TextField fullWidth label='City of Residence' type='text' placeholder="Enter your city of residence" onChange={(e) => setCityOfResidence(e.target.value)} required/>
+                        <TextField fullWidth label='Motorcycle' type='text' placeholder="Enter your motorcycle make & model" onChange={(e) => setMotorcycle(e.target.value)} required/>
                         <TextField fullWidth label='Password' type='password' placeholder="Enter your password" onChange={(e) => setPassword(e.target.value)} required/>
                          <FormControlLabel
                             control={<Checkbox name="checkedA" />}

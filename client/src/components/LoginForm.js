@@ -20,7 +20,7 @@ const LoginForm = (props) => {
         console.log('handleClick');
         try{
             //********** removed http://localhost:3001 **********
-            const response = await axios.post('/login',{
+            const response = await axios.post('http://localhost:3001/login',{
                 email, password
             },{
                 headers:{
@@ -45,9 +45,8 @@ const LoginForm = (props) => {
                         <Typography variant='caption'>Please enter your email and password</Typography>
                     </Grid>
                     <div>
-                        <TextField fullWidth label='Email' placeholder="Enter your email" onChange={(e) => setEmail(e.target.value)} required />
+                        <TextField fullWidth label='Email' type='email' placeholder="Enter your email" onChange={(e) => setEmail(e.target.value)} required />
                         <TextField fullWidth label='Password' type='password' placeholder="Enter your password" onChange={(e) => setPassword(e.target.value)} required/>
-                        {/* <Button id = 'btn' variant='contained' color='primary' onClick={handleClick}>Log in</Button> */}
                     </div>
                     <Box
                         sx={{
