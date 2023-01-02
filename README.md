@@ -1,5 +1,5 @@
 # Riding-Buddy-App
 Find motorcycle riders near you
 
-Check out the live demo here:
+Copy and paste this URL to see a demo: 
 `https://riding-buddy-main.onrender.com/`
